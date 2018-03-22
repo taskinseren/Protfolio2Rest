@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Spotify Suchmaschine</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="orange lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <img class="application-logo-header" src="../images/logo.ico">&nbsp;&nbsp;
+      <a id="logo-container" href="#" class="brand-logo">Spotify Suchmaschine</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="./index.html">Zurück</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="section">
+    <div class="container">
+      <div class="row">
+        <br/>
+        <h4><span class="exerciseType"></span> <span class="exerciseTopic"></span></h4>
+        <h5><span class="exerciseDescription"></span></h5>
+        <a target="_blank" href="" class="exerciseDocument">Zusätzliche Infos</a>
+        <br/>
+        <br/>
+        <table class="bordered highlight responsive-table">
+          <thead>
+            <tr>
+              <th>Nr.</th>
+              <th>Aufgabe</th>
+              <th>Schritte</th>
+            </tr>
+          </thead>
+
+          <tbody id="exerciseList">
+          <!-- results -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">Infos zur Spotify-API</h5>
+          <ul>
+            <li><a target="_blank" class="white-text" href="https://beta.developer.spotify.com/documentation/widgets/generate/play-button/">Play Button</a></li>
+            <li><a target="_blank" class="white-text" href="https://beta.developer.spotify.com/documentation/web-api/">Web API</a></li>
+            <li><a target="_blank" class="white-text" href="https://beta.developer.spotify.com/">Spotify for Developers</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Die Frameworks</h5>
+          <ul>
+            <li><a target="_blank" class="white-text" href="https://projects.spring.io/spring-boot/">Spring Boot</a></li>
+            <li><a target="_blank" class="white-text" href="http://www.baeldung.com/jackson-object-mapper-tutorial">Jackson ObjectMapper</a></li>
+            <li><a target="_blank" class="white-text" href="http://www.baeldung.com/java-optional">Java 8 Optional</a></li>
+            <li><a target="_blank" class="white-text" href="http://materializecss.com/">materializecss</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Nützliche Links</h5>
+          <ul>
+            <li><a target="_blank" class="white-text" href="https://stackoverflow.com/">stackoverflow</a></li>
+            <li><a target="_blank" class="white-text" href="https://www.w3schools.com/">w3schools</a></li>
+            <li><a target="_blank" class="white-text" href="http://lmgtfy.com/?iie=1&q=java+rest+webservice">Alles zu RESTful Webservices</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/exercise.js"></script>
+
+  </body>
+</html>

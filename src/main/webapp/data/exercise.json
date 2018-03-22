@@ -1,0 +1,73 @@
+{
+  "type": "Gruppenaufgabe",
+  "topic": "Rest Webservice",
+  "description": "Erstelle eine Spotify-Suchmaschine, mit der du nach Liedern, Sängern oder Alben suchen und diese direkt im Browser abspielen kannst.",
+  "document": "http://bit.ly/WWI16_SpotifySuchmaschine",
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Registriere deine App auf Spotify",
+      "steps": [
+        "Registriere dich auf Spotify.com",
+        "Rufe beta.developer.spotify.com/dashboard/applications auf",
+        "Dort kannst du eine neue App registrieren und erhälst deine ClientID und Client Secret",
+        "Trage ClientID und ClientSecret in src/resources/config.properties ein"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Erstelle den SearchWebservice",
+      "steps": [
+        "Erstelle einen Service, der eine Such-Anfrage an die gegebenen SpotifyRequest-Klasse stellt. Die Klasse übernimmt für dich den Aufruf der Spotify-API und händelt die Authentifizierung. Die Klasse gibt dir als Antwort ein JSON zurück.",
+        "Beachte: Die SpotifyRequest-Klasse gibt dir ein Optional zurück (neu in Java 8). Wie du mit dem Optional umgehen kannst, findest du in den Folien. (Wer noch weiter gehen will, kann auch die Lambda-Expression von Java 8 nutzen. Dies geht hier aber zu weit. Wer Interesse hat, kann sich gerne bei mir melden.)",
+        "Der Service soll mit ../search aufgerufen werden und als Request-Parameter den Suchbegriff (query) und den Suchtyp (Type) entgegen nehmen."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Verarbeite die Suchanfrage",
+      "steps": [
+        "Je nach Typ der Anfrage (TRACK, ALBUM, ARTIST) soll die Antwort auf dhbw.pojo.search.track.SearchTrack, dhbw.pojo.search.album.SearchAlbum oder dhbw.pojo.search.artist.SearchArtist gemappt werden. Nutze hierzu den ObjectMapper aus den Folien."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Erstelle deine Search-Respone ans Frontend",
+      "steps": [
+        "Die Antwort deines SearchWebservice ans Frontend soll die json-Struktur aus den Contract in den Folien haben. Dazu musst du aus dem zuvor erstellten Objekt die entsprechenden Infos lesen. Als Hilfestellung kannst du die Informationen auf die gegebene Klasse dhbw.pojo.result.search.SearchResult mappen.",
+        "Das Ergebnis deines Webservice soll als json-String zurückgegeben werden"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Erstelle den DetailsWebservice",
+      "steps": [
+        "Erstelle einen Service, der eine Detail-Anfrage an die gegebenen SpotifyRequest-Klasse stellt.",
+        "Der Service soll mit ../detail/{id} aufgerufen werden, als Path-Variable die ID und Request-Parameter den Typ entgegen nehmen."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Verarbeite die Detail-Antwort",
+      "steps": [
+        "Je nach Typ der Anfrage (TRACK, ALBUM, ARTIST) soll die Antwort auf dhbw.pojo.detail.track.DetailsTrack, dhbw.pojo.detail.album.DetailsAlbum oder dhbw.pojo.detail.artist.DetailsArtist gemappt werden. Nutze hierzu den ObjectMapper aus den Folien."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Erstelle deine Details-Response ans Frontend",
+      "steps": [
+        "Die Antwort deines DetailsWebservice ans Frontend soll die json-Struktur aus den Contract in den Folien haben. Dazu musst du aus dem zuvor erstellten Objekt die entsprechenden Infos lesen. Als Hilfestellung kannst du die Informationen auf die gegebene Klasse dhbw.pojo.result.detail.DetailResult mappen.",
+        "Das Ergebnis deines Webservice soll als json-String zurückgegeben werden"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Erweitere deinen Service nach belieben",
+      "steps": [
+        "Diese Aufgabe ist OPTIONAL! Du kannst dir aber bestimmt ein paar Bonuspunkte ergattern ;)",
+        "Wenn dir das noch nicht genug war, kannst du die Antwort deines Services um weitere Infos oder Felder erweitern und diese im Frontend entsprechend anzeigen."
+      ]
+    }
+  ]
+}
