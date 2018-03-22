@@ -28,13 +28,6 @@ import java.io.IOException;
 
 public class SearchWebservice {
     /**
-     * Such-Anfrage an SpotifyRequest-Klasse
-     * Aufruf der Spotify-API
-     * Rückgabe JSON
-     * 
-     * Service soll mit ../search aufgerufen werden 
-     * als Request-Parameter den Suchbegriff (query) 
-     * den Suchtyp (Type) entgegen nehmen.
      * @param type
      * @param query
      * @return 
