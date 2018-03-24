@@ -20,6 +20,7 @@ import dhbw.spotify.RequestType;
 import dhbw.spotify.SpotifyRequest;
 import dhbw.spotify.WrongRequestTypeException;
 import java.io.IOException;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
