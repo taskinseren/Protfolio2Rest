@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Seren
  */
 
-
+@RestController
 public class DetailsWebservice {
     @GetMapping("/detail/{id}")
 	public DetailResult detail(@RequestParam RequestCategory type, @PathVariable String id) {
