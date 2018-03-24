@@ -26,6 +26,7 @@ import java.io.IOException;
  * @author Seren
  */
 
+@RestController
 public class SearchWebservice {
     /**
      * @param type
